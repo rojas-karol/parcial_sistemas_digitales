@@ -138,7 +138,14 @@ El mapa de Karnaugh es una herramienta gráfica para simplificar funciones boole
 
 # PARTE DE DISEÑO
 
+**Ecuacion utilizada para el dibujo del circuito y tabla de verdad:**
 
+<img width="711" height="95" alt="image" src="https://github.com/user-attachments/assets/407a41a4-c211-4b85-b716-bc2c405258cd" />
+
+**Dibujo:**
+
+
+**Tabla de verdad:**
 
 
 
