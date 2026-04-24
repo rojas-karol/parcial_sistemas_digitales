@@ -138,9 +138,9 @@ El mapa de Karnaugh es una herramienta gráfica para simplificar funciones boole
 
 # PARTE DE DISEÑO
 
-**Ecuacion utilizada para el dibujo del circuito y tabla de verdad (2a):** <img width="711" height="95" alt="image" src="https://github.com/user-attachments/assets/407a41a4-c211-4b85-b716-bc2c405258cd" />
+**Ecuacion utilizada para el dibujo del circuito y tabla de verdad (2a):** <img width="910" height="114" alt="image" src="https://github.com/user-attachments/assets/407a41a4-c211-4b85-b716-bc2c405258cd" />
 
-**Dibujo:** <img width="810" height="234" alt="image" src="https://github.com/user-attachments/assets/55b08d91-a0c3-4978-a750-d63b7067f2be" />
+**Dibujo:** <img width="810" height="334" alt="image" src="https://github.com/user-attachments/assets/55b08d91-a0c3-4978-a750-d63b7067f2be" />
 
 **Tabla de verdad:**
 
@@ -177,52 +177,94 @@ Resultado simplificado: X = AB̄C
 X = 1 únicamente cuando A = 1, B = 0, C = 1 (mintérminos 10 y 11)  
 Expresión mínima: **X = AB̄C**
 
-<img width="956" height="411" alt="image" src="https://github.com/user-attachments/assets/53a99551-1849-4169-8910-22719347d559" />
+<img width="810" height="334" alt="image" src="https://github.com/user-attachments/assets/53a99551-1849-4169-8910-22719347d559" />
 
-**Ecuacion utilizada para el dibujo del circuito y tabla de verdad (2b):** <img width="348" height="47" alt="image" src="https://github.com/user-attachments/assets/38721302-67d6-47c9-a2e0-f72aea35b444" />
+---------------
 
-**Dibujo:**
+**Ecuacion utilizada para el dibujo del circuito y tabla de verdad (2b):** <img width="910" height="114" alt="image" src="https://github.com/user-attachments/assets/38721302-67d6-47c9-a2e0-f72aea35b444" />
+
+**Dibujo:** <img width="810" height="334" alt="Captura de pantalla 2026-04-23 203236" src="https://github.com/user-attachments/assets/5d69c2e5-e2ba-42e7-b106-007c4e378f58" />
+
+**Explicación:**
+
+```
+1. Se distribuye:
+
+A B̄ C · BD = 0  (porque B · B̄ = 0)  
+A B̄ C · CDE = A B̄ C D E  
+
+Entonces:
+
+X = A B̄ C D E + AC  
+
+2. Se factoriza:
+
+X = AC (1 + B̄ D E)
+
+3. Propiedad booleana:
+
+1 + cualquier cosa = 1  
+
+Resultado:
+
+X = AC
+```
 
 **Tabla de verdad**
 
-| A | B | C | D | E | B̄ | AB̄C | BD | CDE | BD+CDE | T1=AB̄C·(BD+CDE) | AC | X |
-|---|---|---|---|---|---|-----|-----|-----|--------|-----------------|-----|---|
-| 0 | 0 | 0 | 0 | 0 | 1 |  0  |  0  |  0  |   0    |        0        |  0  | 0 |
-| 0 | 0 | 0 | 0 | 1 | 1 |  0  |  0  |  0  |   0    |        0        |  0  | 0 |
-| 0 | 0 | 0 | 1 | 0 | 1 |  0  |  0  |  0  |   0    |        0        |  0  | 0 |
-| 0 | 0 | 0 | 1 | 1 | 1 |  0  |  0  |  0  |   0    |        0        |  0  | 0 |
-| 0 | 0 | 1 | 0 | 0 | 1 |  0  |  0  |  0  |   0    |        0        |  0  | 0 |
-| 0 | 0 | 1 | 0 | 1 | 1 |  0  |  0  |  0  |   0    |        0        |  0  | 0 |
-| 0 | 0 | 1 | 1 | 0 | 1 |  0  |  0  |  0  |   0    |        0        |  0  | 0 |
-| 0 | 0 | 1 | 1 | 1 | 1 |  0  |  0  |  1  |   1    |        0        |  0  | 0 |
-| 0 | 1 | 0 | 0 | 0 | 0 |  0  |  0  |  0  |   0    |        0        |  0  | 0 |
-| 0 | 1 | 0 | 0 | 1 | 0 |  0  |  0  |  0  |   0    |        0        |  0  | 0 |
-| 0 | 1 | 0 | 1 | 0 | 0 |  0  |  1  |  0  |   1    |        0        |  0  | 0 |
-| 0 | 1 | 0 | 1 | 1 | 0 |  0  |  1  |  0  |   1    |        0        |  0  | 0 |
-| 0 | 1 | 1 | 0 | 0 | 0 |  0  |  0  |  0  |   0    |        0        |  0  | 0 |
-| 0 | 1 | 1 | 0 | 1 | 0 |  0  |  0  |  0  |   0    |        0        |  0  | 0 |
-| 0 | 1 | 1 | 1 | 0 | 0 |  0  |  1  |  0  |   1    |        0        |  0  | 0 |
-| 0 | 1 | 1 | 1 | 1 | 0 |  0  |  1  |  1  |   1    |        0        |  0  | 0 |
-| 1 | 0 | 0 | 0 | 0 | 1 |  0  |  0  |  0  |   0    |        0        |  0  | 0 |
-| 1 | 0 | 0 | 0 | 1 | 1 |  0  |  0  |  0  |   0    |        0        |  0  | 0 |
-| 1 | 0 | 0 | 1 | 0 | 1 |  0  |  0  |  0  |   0    |        0        |  0  | 0 |
-| 1 | 0 | 0 | 1 | 1 | 1 |  0  |  0  |  0  |   0    |        0        |  0  | 0 |
-| 1 | 0 | 1 | 0 | 0 | 1 |  1  |  0  |  0  |   0    |        0        |  1  | 1 |
-| 1 | 0 | 1 | 0 | 1 | 1 |  1  |  0  |  0  |   0    |        0        |  1  | 1 |
-| 1 | 0 | 1 | 1 | 0 | 1 |  1  |  0  |  0  |   0    |        0        |  1  | 1 |
-| 1 | 0 | 1 | 1 | 1 | 1 |  1  |  0  |  1  |   1    |        1        |  1  | 1 |
-| 1 | 1 | 0 | 0 | 0 | 0 |  0  |  0  |  0  |   0    |        0        |  0  | 0 |
-| 1 | 1 | 0 | 0 | 1 | 0 |  0  |  0  |  0  |   0    |        0        |  0  | 0 |
-| 1 | 1 | 0 | 1 | 0 | 0 |  0  |  1  |  0  |   1    |        0        |  0  | 0 |
-| 1 | 1 | 0 | 1 | 1 | 0 |  0  |  1  |  0  |   1    |        0        |  0  | 0 |
-| 1 | 1 | 1 | 0 | 0 | 0 |  0  |  0  |  0  |   0    |        0        |  1  | 1 |
-| 1 | 1 | 1 | 0 | 1 | 0 |  0  |  0  |  0  |   0    |        0        |  1  | 1 |
-| 1 | 1 | 1 | 1 | 0 | 0 |  0  |  1  |  0  |   1    |        0        |  1  | 1 |
-| 1 | 1 | 1 | 1 | 1 | 0 |  0  |  1  |  1  |   1    |        0        |  1  | 1 |
+| **A** | **B** | **C** | **D** | **E** | **X** |
+|---|---|---|---|---|---|
+| 0 | 0 | 0 | 0 | 0 | 0 |
+| 0 | 0 | 0 | 0 | 1 | 0 |
+| 0 | 0 | 0 | 1 | 0 | 0 |
+| 0 | 0 | 0 | 1 | 1 | 0 |
+| 0 | 0 | 1 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 0 | 1 | 0 |
+| 0 | 0 | 1 | 1 | 0 | 0 |
+| 0 | 0 | 1 | 1 | 1 | 0 |
+| 0 | 1 | 0 | 0 | 0 | 0 |
+| 0 | 1 | 0 | 0 | 1 | 0 |
+| 0 | 1 | 0 | 1 | 0 | 0 |
+| 0 | 1 | 0 | 1 | 1 | 0 |
+| 0 | 1 | 1 | 0 | 0 | 0 |
+| 0 | 1 | 1 | 0 | 1 | 0 |
+| 0 | 1 | 1 | 1 | 0 | 0 |
+| 0 | 1 | 1 | 1 | 1 | 0 |
+| 1 | 0 | 0 | 0 | 0 | 0 |
+| 1 | 0 | 0 | 0 | 1 | 0 |
+| 1 | 0 | 0 | 1 | 0 | 0 |
+| 1 | 0 | 0 | 1 | 1 | 0 |
+| 1 | 0 | 1 | 0 | 0 | 1 |
+| 1 | 0 | 1 | 0 | 1 | 1 |
+| 1 | 0 | 1 | 1 | 0 | 1 |
+| 1 | 0 | 1 | 1 | 1 | 1 |
+| 1 | 1 | 0 | 0 | 0 | 0 |
+| 1 | 1 | 0 | 0 | 1 | 0 |
+| 1 | 1 | 0 | 1 | 0 | 0 |
+| 1 | 1 | 0 | 1 | 1 | 0 |
+| 1 | 1 | 1 | 0 | 0 | 1 |
+| 1 | 1 | 1 | 0 | 1 | 1 |
+| 1 | 1 | 1 | 1 | 0 | 1 |
+| 1 | 1 | 1 | 1 | 1 | 1 |
 
-**Simplificación:**
 
 **Resultado:**
+
+X = 1 únicamente cuando:
+
+- A = 1  
+- C = 1  
+
+(No depende de B, D, ni E)
+
+
+**Mintérminos:**
+
+Los valores donde X = 1 corresponden a:
+
+m(20, 21, 22, 23, 28, 29, 30, 31)
+
+**Expresión mínima:** X = AC
 
 
 
