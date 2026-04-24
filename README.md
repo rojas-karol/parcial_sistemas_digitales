@@ -266,6 +266,43 @@ m(20, 21, 22, 23, 28, 29, 30, 31)
 
 **Expresión mínima:** X = AC
 
+-------------------
+
+# PARTE DE EMPIRICA
+
+El chatbot DigiBot fue desarrollado en Python sin dependencias de APIs externas. Funciona completamente offline con síntesis de voz integrada mediante `pyttsx3`.
+ 
+**Temas cubiertos por el chatbot:**
+- Compuertas lógicas y sus tablas de verdad
+- Álgebra de Boole y teoremas de De Morgan
+- Sistemas numéricos: binario, octal, hexadecimal
+- Flip-flops, multiplexores, sumadores, contadores
+- Semiconductores 2026 y empresas del sector
+- Sistemas digitales en la educación
+- Innovación, novedad e impacto de proyectos digitales
+- Futuro de los sistemas digitales y semiconductores
+
+
+**Instalación y uso:**
+
+```bash
+pip install pyttsx3
+python chatbot_parcial.py
+```
+ 
+**Ejemplo de sesión:**
+```
+DigiBot: Hola! Soy DigiBot, tu asistente de Sistemas Digitales creado por Karol Rojas.
+ 
+Tu: semiconductores 2026
+DigiBot: En 2026 la industria de semiconductores está dominada por...
+ 
+Tu: empresas semiconductores
+DigiBot: Las empresas más relevantes en semiconductores son...
+ 
+Tu: innovacion educacion
+DigiBot: La innovación en educación con sistemas digitales...
+```
 
 
 
